@@ -1,0 +1,7 @@
+pitt_csc:
+  name: Pitt CSC
+  slug: pittcsc
+
+pitt_wics:
+  name: Pitt WiCS
+  slug: pittwics

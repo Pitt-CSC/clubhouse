@@ -1,0 +1,9 @@
+# Ignore system-specific config.
+/.bundle
+/config/database.yml
+/config/secrets.yml
+
+# Ignore all logs and temporary files.
+/log/*
+!/log/.keep
+/tmp
