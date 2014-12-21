@@ -11,4 +11,8 @@ class MemberTest < ActiveSupport::TestCase
     @member.club = nil
     assert @member.invalid?
   end
+
+  test 'is nameable' do
+    assert_kind_of Nameable, @member
+  end
 end

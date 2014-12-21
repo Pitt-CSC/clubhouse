@@ -8,4 +8,8 @@ module Club::Sluggable
     validates_format_of :slug, with: SLUG_FORMAT, allow_blank: true
     validates_uniqueness_of :slug
   end
+
+  def to_param
+    slug
+  end
 end

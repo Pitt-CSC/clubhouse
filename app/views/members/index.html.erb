@@ -1,0 +1,18 @@
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Actions</th>
+  </tr>
+
+  <% @members.each do |member| %>
+    <tr>
+      <td><%= member.full_name %></td>
+      <td>
+        <%= link_to 'Edit', edit_club_member_path(member.club, member) %>
+        <%= link_to 'Delete', [member.club, member], method: :delete %>
+      </td>
+    </tr>
+  <% end %>
+</table>
+
+<%= link_to 'Add a member', new_club_member_path(@club) %>

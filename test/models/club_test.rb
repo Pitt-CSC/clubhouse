@@ -35,4 +35,8 @@ class OrganizationTest < ActiveSupport::TestCase
       assert @club.invalid?
     end
   end
+
+  test 'uses slug as parameter' do
+    assert_equal @club.slug, @club.to_param
+  end
 end

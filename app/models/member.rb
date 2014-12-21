@@ -1,5 +1,5 @@
 class Member < ActiveRecord::Base
-  belongs_to :club, required: true
+  include Nameable
 
-  validates_presence_of :first_name
+  belongs_to :club, required: true
 end
