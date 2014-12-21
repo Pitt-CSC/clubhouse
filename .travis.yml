@@ -1,0 +1,12 @@
+language: ruby
+rvm:
+- 2.1.5
+bundler_args: "--without development production --deployment --jobs=3 --retry=3"
+before_script:
+- mysql -e 'CREATE DATABASE clubhouse_test'
+- cp config/database.yml.example config/database.yml
+- cp config/secrets.yml.example config/secrets.yml
+notifications:
+  email: false
+  slack:
+    secure: QqTwsjUgHYMFmV0oxwmRfrhBd5vLprchza79pwdDONJC9OzC9v0r0DavjYXtIT67bvtgVqi7QGTTCfBhY9yt47Bcyfn0MAL6fqbrXumzg4vz2TszFnyRmS66YUeTjqMSh/DHLk1T0XSHrsgPRktMOE2SRSWcQt64QEW6M+CwrvQ=
