@@ -28,7 +28,7 @@ while [ $# -gt 0 ]; do
   esac
 done
 
-echo "Setting up Handy for development:"
+echo "Setting up Clubhouse for development:"
 
 # Enable or disable verbose output
 if [ $VERBOSE -eq 1 ]; then
