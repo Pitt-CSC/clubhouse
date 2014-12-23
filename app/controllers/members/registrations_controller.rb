@@ -1,4 +1,4 @@
-class RegistrationsController < ApplicationController
+class Members::RegistrationsController < ApplicationController
   include ClubScoped
 
   def new

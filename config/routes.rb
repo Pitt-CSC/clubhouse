@@ -4,7 +4,7 @@ Rails.application.routes.draw do
       resources :members
     end
 
-    get 'register' => 'registrations#new', as: :new_club_registration
-    post 'register' => 'registrations#create', as: :club_registrations
+    get 'register' => 'members/registrations#new', as: :new_club_registration
+    post 'register' => 'members/registrations#create', as: :club_registrations
   end
 end

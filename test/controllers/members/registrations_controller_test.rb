@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class RegistrationsControllerTest < ActionController::TestCase
+class Members::RegistrationsControllerTest < ActionController::TestCase
   setup do
     @club = clubs(:pitt_csc)
   end
