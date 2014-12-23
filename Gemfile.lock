@@ -1,18 +1,4 @@
 GIT
-  remote: git://github.com/lautis/uglifier.git
-  revision: 73bb16c265dbee3e95e664ad556162d76b600461
-  specs:
-    uglifier (2.6.0)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
-
-GIT
-  remote: git://github.com/rack/rack.git
-  revision: c9199a87052bc37f04f3700e5aa545e76b3dea61
-  specs:
-    rack (1.6.0)
-
-GIT
   remote: git://github.com/rails/arel.git
   revision: 0cd5fa9671592a16ee34f0718704b15f27911620
   specs:
@@ -93,13 +79,6 @@ GIT
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
 
-GIT
-  remote: git://github.com/sstephenson/sprockets.git
-  revision: 777f1ebfcbb397479d28509bce2ac67d12d40320
-  specs:
-    sprockets (3.0.0.beta.6)
-      rack (~> 1.0)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -140,6 +119,7 @@ GEM
     mysql2 (0.3.17)
     nokogiri (1.6.5)
       mini_portile (~> 0.6.0)
+    rack (1.6.0)
     rack-test (0.6.2)
       rack (>= 1.0)
     rails-deprecated_sanitizer (1.0.3)
@@ -160,6 +140,8 @@ GEM
       tilt (~> 1.1)
     slop (3.6.0)
     spring (1.2.0)
+    sprockets (3.0.0.beta.6)
+      rack (~> 1.0)
     thor (0.19.1)
     thread_safe (0.3.4)
     tilt (1.4.1)
@@ -167,22 +149,25 @@ GEM
       coffee-rails
     tzinfo (1.2.2)
       thread_safe (~> 0.1)
+    uglifier (2.6.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  arel!
+  arel (~> 6.0.0)!
   byebug
   coffee-rails (~> 4.1.0)
   jquery-rails
   mysql2
-  rack!
+  rack (~> 1.6.0)
   rails!
   sass-rails (~> 5.0)
   spring
-  sprockets!
+  sprockets (~> 3.0.0.beta.6)
   sprockets-rails!
   turbolinks
-  uglifier!
+  uglifier (~> 2.6.0)
   web-console!

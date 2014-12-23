@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
 gem 'rails', github: 'rails/rails'
-gem 'rack', github: 'rack/rack'
-gem 'arel', github: 'rails/arel'
+gem 'rack', '~> 1.6.0'
+gem 'arel', '~> 6.0.0', github: 'rails/arel'
 gem 'mysql2'
 
 # Assets
-gem 'sprockets', github: 'sstephenson/sprockets'
+gem 'sprockets', '~> 3.0.0.beta.6'
 gem 'sprockets-rails', github: 'rails/sprockets-rails'
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', github: 'lautis/uglifier'
+gem 'uglifier', '~> 2.6.0'
 gem 'coffee-rails', '~> 4.1.0'
 
 # JavaScript
