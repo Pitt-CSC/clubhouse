@@ -13,7 +13,6 @@ gem 'uglifier', '~> 2.6.0'
 gem 'coffee-rails', '~> 4.1.0'
 
 # JavaScript
-gem 'jquery-rails'
 gem 'turbolinks'
 
 group :development do
